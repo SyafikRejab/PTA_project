@@ -1,0 +1,171 @@
+/* === plannerDisp.css === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #49baff;
+}
+
+.profile-icon {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+
+.calendar-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.calendar-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.calendar-month {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Each date cell will expand automatically */
+.date-cell {
+  border: 1px solid black;
+  padding: 4px;
+  min-height: 60px;
+  position: relative;
+  background: #f9f9f9;
+}
+
+.task {
+  font-size: 12px;
+  margin-top: 4px;
+  background: #e0f7fa;
+  padding: 2px;
+  border-radius: 3px;
+}
+.date-cell.expand {
+  background: #fff8e1;
+}
+
+.task-details {
+  font-size: 12px;
+  margin-top: 5px;
+  background: #fff9c4;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Responsive buttons */
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Add task button inside cell */
+.add-task-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  background-color: #49baff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #1a9fe0;
+}
+
+
+.day-labels {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
